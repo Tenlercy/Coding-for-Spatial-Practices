@@ -1,0 +1,26 @@
+body{
+    font-family: monospace;
+}
+
+section {
+    font-style: oblique;
+}
+
+h1 {
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: underline;
+    font-style: normal;
+}
+
+h3 {
+    text-align: center;
+}
+
+.english {
+    color:darkcyan
+}
+
+.port {
+    color:darkred;
+}
