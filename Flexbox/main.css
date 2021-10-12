@@ -5,7 +5,7 @@ body{
 .container{
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
 }
 
 .item{
@@ -14,4 +14,12 @@ body{
     height: 100px;
     background-color: tomato;
     font-size: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.item:nth-child(1){
+    flex-grow: 3;
 }
