@@ -7,3 +7,11 @@ body{
     justify-content: center;
     align-items: stretch;
 }
+
+.item{
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    font-size: 42px;
+}
