@@ -1,0 +1,9 @@
+body{
+    background-color: lemonchiffon;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
