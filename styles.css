@@ -1,0 +1,16 @@
+nav{
+    height: 60px;
+}
+
+.container:{
+    display: flex;
+    justify-content: space-around;
+
+    list-style: none;
+    background: tomato;
+    line-height: 60px;
+}
+
+.container a{
+    text-decoration-color: white;
+}
