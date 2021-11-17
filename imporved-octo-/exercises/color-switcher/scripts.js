@@ -18,7 +18,7 @@ grayCircle.addEventListener("click", turnPageGray);
 function turnPageYellow(){
     console.log('turn me yellow');
     let body = document.querySelector("body");
-    body.style.backgroundColor("yellow")
+    body.style.backgroundColor = "yellow";
 }
 
 function turnPageBlue(){
