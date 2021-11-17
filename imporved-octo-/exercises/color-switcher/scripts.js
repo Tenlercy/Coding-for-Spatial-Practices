@@ -24,17 +24,17 @@ function turnPageYellow(){
 function turnPageBlue(){
     console.log('turn me blue');
     let body = document.querySelector("body");
-    body.style.backgroundColor("blue")
+    body.style.backgroundColor = "blue";
 }
 
 function turnPageWhite(){
     console.log('turn me white');
     let body = document.querySelector("body");
-    body.style.backgroundColor("white")
+    body.style.backgroundColor = "white";
 }
 
 function turnPageGray(){
     console.log('turn me gray');
     let body = document.querySelector("body");
-    body.style.backgroundColor("gray")
+    body.style.backgroundColor = "gray";
 }
