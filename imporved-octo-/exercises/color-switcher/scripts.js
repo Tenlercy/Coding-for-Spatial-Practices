@@ -22,6 +22,8 @@ function turnPageYellow(){
 }
 
 function turnPageBlue(){
+    let heading = document.querySelector("h1");
+    heading.style.color = "white";
     console.log('turn me blue');
     let body = document.querySelector("body");
     body.style.backgroundColor = "blue";
