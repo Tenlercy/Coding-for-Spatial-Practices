@@ -1,24 +1,10 @@
-/**
- * demo.js
- * https://coidea.website
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2018, COIDEA
- * https://coidea.website
- */
-
  $('.slideshow').imagesLoaded({ background: true })
  .done( function() {
- 
-   // hide loader
+
    $('.loader').addClass('is-loaded');
 
-   // demo
    CSSPlugin.defaultForce3D = false
 
-   // variables
    var navItems = $("li"),
      background = $(".background"),
      holder = $(".holder"),
@@ -28,7 +14,6 @@
      rotation,
      type = "_short";
 
-   // set tween values
    function setTweenValues() {
      rotation = Number($(this).data('rotation'));
      activeID = $(this).data('id');
@@ -38,7 +23,6 @@
      var tweenCode2 = 'TweenMax.to(".main-background", 0.5, { rotation:"' + rotation+type +'" });';
    }
 
-   // do tween
    function doTween(){
      
      $('.content').each(function(index, elem) {
@@ -57,7 +41,6 @@
        timeline.play();
    }
 
-   // click/hover on items
    navItems.click(doTween);
    navItems.mouseenter(setTweenValues);
 

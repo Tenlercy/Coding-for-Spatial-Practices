@@ -49,53 +49,27 @@
     opacity: 0;
     visibility: hidden;
     text-align: center;
-    color: #b38a58;
+    color: #afafaf;
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
   }
-  body section.slideshow .content .inner h2 {
-    font-family: 'Roboto Condensed', sans-serif;
-      color: white;
-  }
-  body section.slideshow .content .inner p {
-    padding: 8px 0;
-      font-family: 'Roboto Condensed', sans-serif;
-      
-      
-  }
+
    
-  body section.slideshow .content .inner a {
-      font-family: 'Roboto Condensed', sans-serif;
-    position: relative;
-    display: inline-block;
-    margin-top: 16px;
-    background: #fff;
-    border: 1px solid #b38a58;
-    padding: 12px 20px;
-    font-size: 17px;
-    color: #b38a58;
-    box-shadow: 4px 4px 0px 0px #b38a58;
-    font-weight: 700;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: all 0.15s ease-in-out;
-    left: 0;
-    top: 0;
-    outline: 0px none;
-    outline: 0px;
-  }
- 
   body section.slideshow .content .inner a:hover {
     left: 4px;
     top: 4px;
-    box-shadow: 0 0 0 0 #b38a58;
+    box-shadow: 0 0 0 0 #acacac;
   }
+
   body section.slideshow .content.main-content {
     top: 0;
     left: 0;
+    background-image: url(comic01.jpg);
   }
+
+}
+
   body section.slideshow .content.main-content .inner {
     opacity: 1;
     visibility: visible;
@@ -103,14 +77,17 @@
   body section.slideshow .content.main-content-1 {
     top: 0;
     left: 50%;
+    background-image: url(comic02.jpg);
   }
   body section.slideshow .content.main-content-2 {
     top: 50%;
     left: 50%;
+    background-image: url(comic03.jpg);
   }
   body section.slideshow .content.main-content-3 {
     top: 50%;
     left: 0;
+    background-image: url(comic04.jpg);
   }
   body section.slideshow .background {
     position: absolute;
@@ -122,23 +99,23 @@
     left: -150%;
   }
   body section.slideshow .background.main-background {
-    background-color: #0d1f22;
+    background-color: #000000;
     z-index: 4;
   }
   body section.slideshow .background.main-background-1 {
-    background-color: #264027;
+    background-color: #4b4b4b;
     z-index: 3;
   }
   body section.slideshow .background.main-background-2 {
-    background-color: #3c5233;
+    background-color: #9b9b9b;
     z-index: 2;
   }
   body section.slideshow .background.main-background-3 {
-    background-color: #6f732f;
+    background-color: #c2c2c2;
     z-index: 1;
   }
   body section.slideshow ul.navigation {
-    background-color: orange;
+    background-color: rgb(0, 0, 0);
     position: relative;
     display: inline-block;
     width: 164px;
@@ -153,7 +130,7 @@
     transform: translate(-50%, -50%);
     z-index: 10;
     border: 3px solid #fff;
-    box-shadow: 4px 4px 0px 0px #b38a58;
+    box-shadow: 4px 4px 0px 0px #747474;
     transition: all 0.15s ease-in-out;
   }
   
@@ -222,5 +199,5 @@
   }
   
   body section.slideshow ul.navigation:hover {
-    box-shadow: 0px 0px 0px 0px #b38a58;
+    box-shadow: 0px 0px 0px 0px #acacac;
   }
