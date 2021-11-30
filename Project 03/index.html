@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--fonts-->
+	<link href='#css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
+<!--//fonts-->
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+</head>
+<body>
+	<!--header-->
+	<div class="header">
+		<div class="container">
+			<div class="top-header">
+			<div class="logo">
+				<a href="#"><img src="images/logo.png" alt=" " /></a>
+			</div>
+			<div class="top-nav">
+				<div class="nav-icon">
+							<a href="#" class="right_bt" id="activator"><span> </span> </a>
+						</div>
+						 <div class="box" id="box">
+							 <div class="box_content">        					                         
+								<div class="box_content_center">
+								 	<div class="form_content">
+										<div class="menu_box_list">
+											<ul>
+												<li><a href="#home" class="scroll"><span>home</span></a></li>
+												<li><a href="#about" class="scroll"><span>about</span></a></li>
+												<li><a href="#services" class="scroll"><span>services</span></a></li>
+												<li><a href="#work" class="scroll"><span>work</span></a></li>
+												<li><a href="#portfolio" class="scroll"><span>portfolio</span></a></li>
+												<li><a href="#blog" class="scroll"><span>blog </span></a></li>
+												<li><a href="#contact" class="scroll"><span>Contact</span></a></li>
+												<div class="clearfix"> </div>
+											</ul>
+										</div>
+										<a class="boxclose" id="boxclose"> <span> </span></a>
+									</div>                                  
+								</div> 	
+							</div>  	  
+						</div>
+					<!---start-click-drop-down-menu----->
+			        <!----start-dropdown--->
+			         <script type="text/javascript">
+						var $ = jQuery.noConflict();
+							$(function() {
+								$('#activator').click(function(){
+									$('#box').animate({'top':'0px'},900);
+								});
+								$('#boxclose').click(function(){
+								$('#box').animate({'top':'-1000px'},900);
+								});
+							});
+							$(document).ready(function(){
+							//Hide (Collapse) the toggle containers on load
+							$(".toggle_container").hide(); 
+							//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+							$(".trigger").click(function(){
+								$(this).toggleClass("active").next().slideToggle("500");
+									return false; //Prevent the browser jump to the link anchor
+							});
+												
+						});
+					</script>
+					<!---//End-click-drop-down-menu----->
+					<!--top-nav---->
+			</div>
+			<div class="clearfix"> </div>
+			</div>
+	<!--banner-->
+		 <div class="banner">
+			<div class="wmuSlider example1">
+				   <div class="wmuSliderWrapper">
+					   <article style="position: absolute; width: 100%; opacity: 0;">
+					   	<div class="banner-matter">
+							<h2>Lorem ipsum dolor sit amet, con-sectetur adipiscing elit</h2>
+							<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+							<div class="more-view"> 
+								<a class="more" href="#">LEAR MORE</a>
+							</div>
+						</div>
+					 	</article>
+					 	<article style="position: absolute; width: 100%; opacity: 0;">
+						<div class="banner-matter">
+							<h2>Sed ut perspiciatis unde omnis iste natus error sit</h2>
+							<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+							<div class="more-view"> 
+								<a class="more" href="#">LEAR MORE</a>
+							</div>
+						</div>
+					 	</article>
+					 	<article style="position: absolute; width: 100%; opacity: 0;">
+						<div class="banner-matter">
+							<h2>But I must explain to you how all this mistaken denouncing</h2>
+							<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+							<div class="more-view"> 
+								<a class="more" href="#">LEAR MORE</a>
+							</div>
+						</div>
+					 	</article>
+					 </div>
+					 <div class="clearfix"> </div>
+	                <ul class="wmuSliderPagination">
+	                	<li><a href="#" class="">0</a></li>
+	                	<li ><a href="#" class="">1</a></li>
+	                	<li><a href="#" class="">2</a></li>
+	                </ul>
+	            </div>
+	            <script src="js/jquery.wmuSlider.js"></script> 
+				  <script>
+	       			$('.example1').wmuSlider();         
+	   		     </script> 	           	         
+		</div>
+		<!--//banner-->
+		</div>
+	</div>
+	<!--//header-->
+	<!--content-->
+	<div class="content">
+		<div class="container">
+			<div class="about" id="about">
+				<img class="img-responsive tv-grid" src="images/tv.png" alt="" />
+				<div class="we-are">
+					<h4>we' are crafty</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+				</div>
+			</div>
+		</div>
+		<!---->
+			<div class="services" id="services">
+				<div class="container">
+					<div class="creative">
+						<div class="col-md-6 creative-left-bulb ">
+							<div class="col-md-3 blub">
+								<span class="bulb-grid"> </span>
+							</div>
+							<div class="col-md-9 creative-are">
+								<h5 class="we-top-left">we' are creative</h5>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam</p>
+							</div>
+						</div>
+						<div class="col-md-6 creative-left-bulb">
+							<div class="col-md-3 blub ">
+								<span class="bulb-grid setting-grid"> </span>
+							</div>
+							<div class="col-md-9 creative-are">
+								<h5 class="top-we">we' are creative</h5>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam</p>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="creative">
+						<div class="col-md-6 creative-left-bulb">
+							<div class="col-md-3 blub">
+								<span class="bulb-grid car-grid"> </span>
+							</div>
+							<div class="col-md-9 creative-are">
+								<h5 class="top-we">we' are creative</h5>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam</p>
+							</div>
+						</div>
+						<div class="col-md-6 creative-left-bulb">
+							<div class="col-md-3 blub">
+								<span class="bulb-grid men-grid"> </span>
+							</div>
+							<div class="col-md-9 creative-are">
+								<h5 class="top-we">we' are creative</h5>
+								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam</p>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<script>
+						$(document).ready(function(){
+						  $(".setting-grid").hover(function(){
+						    $(".setting-grid").css("color","yellow");
+						  });
+						   $("h5.top-we").hover(function(){
+						    $("h5.top-we h5").css("color","yellow");
+						  });
+						});
+					</script>
+			</div>
+		</div>
+		<!---->
+		<div class="work" id="work">
+			<div class="container">
+				<div class="creative-grid">
+					<img src="images/lo.png" alt="" />
+					<div class="we-grid">
+						<h4>we' are crafty</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!---->
+				<div class="portfolio" id="portfolio">
+					<div class="container">
+						<ul id="filters">
+							<li class="active"><span class="filter" data-filter="app card icon logo set web">All</span></li>
+							<li><span class="filter" data-filter="app">Branding</span></li>
+							<li><span class="filter" data-filter="card">Web </span></li>
+							<li><span class="filter" data-filter="logo">Photography</span></li>
+							<li><span class="filter" data-filter="set">Ui/ux</span></li>
+							<li><span class="filter" data-filter="icon">Development</span></li>
+						</ul>
+					</div>
+					<div id="portfoliolist">
+						<div class="top-porfolio">
+						<div class="portfolio app mix_all left-portfolio" data-cat="app" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper portfolio-left">		
+								<a href="#" class="b-link-stripe b-animate-go  thickbox play-icon">
+							 	 <img class="img-responsive" src="images/pic-1.jpg" alt="" />
+							    </a>  
+							    <div class="project">
+							    	<h6>PROJECT TITLE</h6>
+							    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+							    	<img class="img-responsive" src="images/plus.png" alt="" />
+							    </div>             
+							</div>	
+						</div>	
+						<div class="portfolio card mix_all left-portfolio-one" data-cat="card" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper portfolio-left">		
+								<a href="#" class="b-link-stripe b-animate-go  thickbox play-icon">
+							  <img class="img-responsive" src="images/pic-2.jpg" alt="" />
+							    </a>  
+							    <div class="project">
+							    	<h6>PROJECT TITLE</h6>
+							    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+							    	<img class="img-responsive" src="images/plus.png" alt="" />
+							    </div>                 
+							</div>	
+						</div>
+						
+						<div class="portfolio logo mix_all left-portfolio-two" data-cat="logo" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper portfolio-left">		
+								<a href="#" class="b-link-stripe b-animate-go  thickbox play-icon">
+							  <img class="img-responsive top-grid-left" src="images/pic-4.jpg" alt="" />
+							    </a>   
+							    <div class="project">
+							    	<h6>PROJECT TITLE</h6>
+							    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+							    	<img class="img-responsive top-grid-left" src="images/plus.png" alt="" />
+							    </div>                
+							</div>	
+						</div>	
+						<div class="portfolio set mix_all left-portfolio-three" data-cat="set" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper portfolio-left">		
+								<a href="#" class="b-link-stripe b-animate-go  thickbox play-icon">
+							  <img class="img-responsive" src="images/pic-5.jpg" alt="" />
+							    </a> 
+							    <div class="project">
+							    	<h6>PROJECT TITLE</h6>
+							    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+							    	<img class="img-responsive top-grid-left" src="images/plus.png" alt="" />
+							    </div>                  
+							</div>	
+						</div>	
+						<div class="portfolio set mix_all left-portfolio-four" data-cat="set" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper portfolio-left">		
+								<a href="#" class="b-link-stripe b-animate-go  thickbox play-icon">
+							 		 <img class="img-responsive" src="images/pic-6.jpg" alt="" />
+							    </a>  
+							    <div class="project">
+							    	<h6>PROJECT TITLE</h6>
+							    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+							    	<img class="img-responsive" src="images/plus.png" alt="" />
+							    </div>                 
+							</div>	
+						</div>	
+						<div class="clearfix"> </div>
+						</div>
+						<div class="bottom-port">
+						<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+							<div class="portfolio-wrapper">		
+								<a href="#" class="b-link-stripe b-animate-go  thickbox play-icon">
+							  		<img class="img-responsive" src="images/pic-3.jpg" alt="" />
+							    </a>  
+							    <div class="project">
+							    	<h6>PROJECT TITLE</h6>
+							    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+							    	<img src="images/plus.png" alt="" />
+							    </div>                 
+							</div>	
+						</div>	
+						</div>
+						<div class="clearfix"> </div>
+						</div>	
+					
+			<!-- Script for gallery Here -->
+				<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+					$(function () {
+						
+						var filterList = {
+						
+							init: function () {
+							
+								// MixItUp plugin
+								// http://mixitup.io
+								$('#portfoliolist').mixitup({
+									targetSelector: '.portfolio',
+									filterSelector: '.filter',
+									effects: ['fade'],
+									easing: 'snap',
+									// call the hover effect
+									onMixEnd: filterList.hoverEffect()
+								});				
+							
+							},
+							
+							hoverEffect: function () {
+							
+								// Simple parallax effect
+								$('#portfoliolist .portfolio').hover(
+									function () {
+										$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+										$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+									},
+									function () {
+										$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+										$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+									}		
+								);				
+							
+							}
+				
+						};
+						
+						// Run the show!
+						filterList.init();
+						
+						
+					});	
+					</script>
+			<!-- Gallery Script Ends -->
+			</div>
+		<!---->
+		<div class="blog" id="blog">
+			<div class="container">
+				<div class="creative-top-grid">
+					<img src="images/sc.png" alt="" />
+					<div class="we-grid-left">
+						<h4>we' are crafty</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!---->
+		<div class="contact" id="contact">
+			<div class="container">
+				<form>
+					<div class="grid-contact">
+						<div class="col-md-4 contact-grid">
+							<input type="text" value="YOUR NAME" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='YOUR NAME';}">
+						</div>
+						<div class="col-md-4 contact-grid">
+							<input type="text" value="YOUR EMAIL" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='YOUR EMAIL';}">
+						</div>
+						<div class="col-md-4 contact-grid">
+							<input type="text" value="SUBJECT" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='SUBJECT';}">
+						</div>
+					</div>
+						<textarea cols="77" rows="6" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'YOUR MESSAGE TEXTS';}">YOUR MESSAGE TEXTS</textarea>
+						<div class="send">
+							<input type="submit" value="CLICK TO SEND" >
+						</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--//content-->
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+			 <p class="footer-class">Copyright &copy; 2014.Company name All rights reserved.<a target="_blank" href="http://guantaow.taobao.com/">厚朴网络淘宝店</a><a target="_blank" href="http://www.moobnn.com">网页模板</a></p>
+			 <ul class="social-icons">
+				<li class="facebook"><a href="#"><span > </span></a></li>
+				<li class="dribbble"><a href="#"><span > </span></a></li>
+				<li class="been"><a href="#"><span > </span></a></li>
+			</ul>
+			 <div class="clearfix"> </div>
+		</div>
+		<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+	<!--//footer-->
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>
