@@ -9,7 +9,7 @@
 	<body>
 		<nav class="nav">
 	 <a href="#" class="nav-item is-active" active-color="orange">HOME</a>
-	 <a href="#" class="nav-item" active-color="green">ARTIST</a>
+	 <a href="#" class="nav-item" active-color="green" aria-hidden="true">ARTIST</a> 
 	 <a href="#" class="nav-item" active-color="blue">MEDIA</a>
 	 <a href="#" class="nav-item" active-color="red">CHARACTER</a>
 	 <a href="#" class="nav-item" active-color="rebeccapurple">STORYBOARD</a>
@@ -71,14 +71,32 @@
 
 		   </div>
 	
+	<ul class="slides">
+		<input type="radio" id="control-1" name="control" checked>
+		<input type="radio" id="control-2" name="control">
+		<input type="radio" id="control-3" name="control">
+
+		<li class="slide"></li>
+		<li class="slide"></li>
+		<li class="slide"></li>
+
+		<div class="controls-visible">
+			<label for="control-1"></label>
+			<label for="control-2"></label>
+			<label for="control-3"></label>
+		</div>
+	</ul>
+
+
+	
    <script src="scripts.js"></script>
 
    <script type="text/javascript" src="vanilla-tilt.js"></script>
 
 	<script>
 			VanillaTilt.init(document.querySelectorAll(".card"), {
-		max: 25,
-		speed: 400,
+		max: 10,
+		speed: 50,
 	});
 	</script>
 
