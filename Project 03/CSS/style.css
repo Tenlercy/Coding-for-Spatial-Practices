@@ -4,7 +4,7 @@
 }
 body {
   text-align: center;
-  display: flex;
+  display: inline;
   height: 100vh;
   width: 100%;
   justify-content: center;
@@ -14,7 +14,7 @@ body {
 }
 .nav {
   display: inline-flex;
-  position: relative;
+  position: bottom;
   overflow: hidden;
   max-width: 100%;
   background-color: #fff;
@@ -66,4 +66,88 @@ body {
   .nav {
 	overflow: auto;
  }
+}
+
+.container
+{
+	position: fixed;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	max-width: 2200px;
+	flex-wrap: wrap;
+	z-index: 1;
+}
+.container .card
+{
+	position: relative;
+	width: 280px;
+	height: 400px;
+	margin: 50px;
+	box-shadow: 20px 20px 50px rgba(36, 36, 36, 0.5);
+	border-radius: 15px;
+	background: rgba(255, 255, 255, 0.1);
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-left: 1px solid rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(5px);
+}
+.container .card .content
+{
+	padding: 20px;
+	text-align: center;
+	transform: translateY(10px);
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.container .card:hover .content
+{
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+
+.container .card .content h2
+{
+	position: fixed;
+	top: -105px;
+	right: 0px;
+	font-size: 5em;
+	color: rgba(213, 215, 226, 0.89);
+	pointer-events: none;
+}
+
+.container .card .content h3
+{
+	font-size: 1.2em;
+	z-index: 1;
+	display: inline-block;
+	padding: 8px 15px;
+	background: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	border-radius: 20px;
+	font-weight: 500;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.192);
+}
+
+.container .card .content p
+{
+	font-size: 1em;
+	font-weight: 200;
+	text-align: justify;
+}
+
+.container .card .content a
+{
+	position: relative;
+	display: inline-block;
+	padding: 8px 12px;
+	color: rgb(75, 75, 75);
+	border-radius: 20px;
+	text-decoration: none;
+	font-weight: 500;
 }
