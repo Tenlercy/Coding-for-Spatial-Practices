@@ -1,0 +1,110 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>One Piece - Tong</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	
+	<body>
+		<nav class="nav">
+	 <a href="#" class="nav-item is-active" active-color="orange">HOME</a>
+	 <a href="#" class="nav-item" active-color="green" aria-hidden="true">ARTIST</a> 
+	 <a href="#" class="nav-item" active-color="blue">MEDIA</a>
+	 <a href="#" class="nav-item" active-color="red">CHARACTER</a>
+	 <a href="#" class="nav-item" active-color="rebeccapurple">STORYBOARD</a>
+	 <span class="nav-indicator"></span>
+  	 </nav>
+
+   		<div class="container">
+			<div class="card">
+				<div class="content">
+					<h2>01</h2>
+					<h3>One Piece</h3>
+					<p>The series focuses on Monkey D. Luffy, a rubberized young man who, inspired by his childhood idol, the powerful pirate "Red Haired" Shanks, sets off on a journey from the East Blue Sea to find the mythical One Piece and proclaim himself the King of the Pirates.</p>
+					<a href="01.jpg">Read More</a>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="content">
+					<h2>02</h2>
+					<h3>ARTIST</h3>
+					<p>Eiichiro Oda is a Japanese manga artist and the creator of the series One Piece. With more than 490 million tankōbon copies in circulation worldwide, One Piece is both the best-selling manga and the best-selling comic series of all time, in turn making Oda one of the best-selling fiction authors.</p>
+					<a href="#">Read More</a>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="content">
+					<h2>03</h2>
+					<h3>MEDIA</h3>
+					<ul>
+						<li><a href="#">Festival films and OVA</a></li>
+						<li><a href="#">Anime series</a></li>
+						<li><a href="#">Theatrical films</a></li>
+						<li><a href="#">Video games</a></li>
+						<li><a href="#">Music</a></li>
+
+					</ul>
+					<a href="#">Read More</a>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="content">
+					<h2>04</h2>
+					<h3>CHARACTER</h3>
+					<p>The series focuses on Monkey D. Luffy, a rubberized young man who, inspired by his childhood idol, the powerful pirate "Red Haired" Shanks, sets off on a journey from the East Blue Sea to find the mythical One Piece and proclaim himself the King of the Pirates.</p>
+					<a href="#">Read More</a>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="content">
+					<h2>05</h2>
+					<h3>STORYBOARD</h3>
+					<p>Recently Updated elements of comics, extremely crazy fantasy adventure, paging browsing screen, give people the most cool viewing experience. Let one Piece light up your day and fill you with energy and fight. Sailing, our journey is the sea of stars.</p>
+					<a href="page_02.html">Read More</a>
+				</div>
+			</div>
+
+		   </div>
+	
+	<ul class="slides">
+		<input type="radio" id="control-1" name="control" checked>
+		<input type="radio" id="control-2" name="control">
+		<input type="radio" id="control-3" name="control">
+		<input type="radio" id="control-4" name="control">
+		<input type="radio" id="control-5" name="control">
+
+		<li class="slide"></li>
+		<li class="slide"></li>
+		<li class="slide"></li>
+		<li class="slide"></li>
+		<li class="slide"></li>
+
+		<div class="controls-visible">
+			<label for="control-1"></label>
+			<label for="control-2"></label>
+			<label for="control-3"></label>
+			<label for="control-4"></label>
+			<label for="control-5"></label>
+		</div>
+	</ul>
+
+
+	
+   <script src="scripts.js"></script>
+
+   <script type="text/javascript" src="vanilla-tilt.js"></script>
+
+	<script>
+			VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 10,
+		speed: 50,
+	});
+	</script>
+
+	</body>
+	</html>

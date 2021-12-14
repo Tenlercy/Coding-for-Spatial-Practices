@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  
+   
+  body section.slideshow {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  body section.slideshow .content {
+    background-color: transparent;
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position: center center;     
+    background-size: cover;
+    z-index: 6;
+  }
+  body section.slideshow .content:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;    
+    filter: gray;
+    filter: grayscale(100%);
+    z-index: 1;
+  }
+  body section.slideshow .content .inner {
+    position: relative;
+    display: block;
+    width: 100%;
+    width: calc(100% - 32px);
+    max-width: 520px;
+    height: auto;
+    margin: 0 auto;
+    padding: 64px 0;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    color: #afafaf;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+
+   
+  body section.slideshow .content .inner a:hover {
+    left: 4px;
+    top: 4px;
+    box-shadow: 0 0 0 0 #acacac;
+  }
+
+  body section.slideshow .content.main-content {
+    top: 0;
+    left: 0;
+    background-image: url(comic01.jpg);
+  }
+
+  body section.slideshow .content.main-content .inner {
+    opacity: 1;
+    visibility: visible;
+  }
+  body section.slideshow .content.main-content-1 {
+    top: 0;
+    left: 50%;
+    background-image: url(comic02.jpg);
+  }
+  body section.slideshow .content.main-content-2 {
+    top: 50%;
+    left: 50%;
+    background-image: url(comic03.jpg);
+  }
+  body section.slideshow .content.main-content-3 {
+    top: 50%;
+    left: 0;
+    background-image: url(comic04.jpg);
+  }
+  body section.slideshow .background {
+    position: absolute;
+    display: block;
+    width: 200%;
+    height: 200%;
+    overflow: hidden;
+    top: -150%;
+    left: -150%;
+  }
+  body section.slideshow .background.main-background {
+    background-color: #000000;
+    z-index: 4;
+  }
+  body section.slideshow .background.main-background-1 {
+    background-color: #4b4b4b;
+    z-index: 3;
+  }
+  body section.slideshow .background.main-background-2 {
+    background-color: #9b9b9b;
+    z-index: 2;
+  }
+  body section.slideshow .background.main-background-3 {
+    background-color: #c2c2c2;
+    z-index: 1;
+  }
+  body section.slideshow ul.navigation {
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    display: inline-block;
+    width: 164px;
+    height: 164px;
+    top: 50%;
+    left: 50%;
+    float: none;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 50%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    border: 3px solid #fff;
+    box-shadow: 4px 4px 0px 0px #747474;
+    transition: all 0.15s ease-in-out;
+  }
+  
+  body section.slideshow ul.navigation li {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #FFF;
+    position: absolute;
+    display: block;
+    width: 83px;
+    height: 83px;
+    font-size: 22px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+ 
+  body section.slideshow ul.navigation li span {
+    position: absolute;
+    display: block;
+  }
+  body section.slideshow ul.navigation li:nth-child(1) {
+    width: 82px;     
+    left: 0;
+    border-right: 3px solid #fff;
+  }
+ 
+  body section.slideshow ul.navigation li:nth-child(1) span {
+    bottom: 5px;
+    right: 10px;
+  }
+ 
+  body section.slideshow ul.navigation li:nth-child(2) {
+    height: 82px;
+    top: 0;
+    left: 50%;
+    border-bottom: 3px solid #fff;
+  }
+ 
+  body section.slideshow ul.navigation li:nth-child(2) span {
+    bottom: 5px;
+    left: 10px;
+     
+  }
+   
+  body section.slideshow ul.navigation li:nth-child(3) {
+    width: 82px;
+    top: 50%;
+    left: 50%;
+    border-left: 3px solid #fff;
+  }
+  
+  body section.slideshow ul.navigation li:nth-child(3) span {
+    top: 7px;
+    left: 6px;
+  }
+  
+  body section.slideshow ul.navigation li:nth-child(4) {
+    height: 82px;
+    top: 50%;
+    left: 0;
+    border-top: 3px solid #fff;
+  }
+  
+  body section.slideshow ul.navigation li:nth-child(4) span {
+    top: 5px;
+    right: 9px;
+  }
+  
+  body section.slideshow ul.navigation:hover {
+    box-shadow: 0px 0px 0px 0px #acacac;
+  }
