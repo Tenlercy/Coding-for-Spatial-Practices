@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans&display=swap");
-
 body {
-  font-family: "Open Sans", sans-serif;
+  background-color: lemonchiffon;
 }
 
 /* parent */
@@ -52,3 +50,28 @@ h1 {
 /* .pullquote:hover {
   color: pink;
 } */
+
+.container{
+  display: initial;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.item{
+  /* flex-grow: 1; */
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  background-color:rgb(252, 214, 111);
+  font-size: 24px;
+  display: initial;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.item:nth-child(2){
+  flex-grow: 3;
+  background-color: rgb(150, 192, 95);
+  align-self: flex-end;
+}

@@ -1,46 +1,45 @@
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 li {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 2px solid black;
-    margin: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin: 20px;
 }
 
 #grayButton {
-    background-color: gray;
+  background-color: gray;
 }
 
 #whiteButton {
-    background-color: white;
+  background-color: white;
 }
 
 #blueButton {
-    background-color: blue;
+  background-color: blue;
 }
 
 #yellowButton{
-    background-color: yellow;
+  background-color: yellow;
 }
 
 .gray-theme {
-    background-color: grey;
-  }
-  
-  .white-theme {
-    background-color: white;
-  }
-  
-  .yellow-theme {
-    background-color: yellow;
-  }
-  
-  .blue-theme {
-    background-color: blue;
-    /*   change text to white */
-    color: white;
-  }
-  
+  background-color: grey;
+}
+
+.white-theme {
+  background-color: white;
+}
+
+.yellow-theme {
+  background-color: yellow;
+}
+
+.blue-theme {
+  background-color: blue;
+  /*   change text to white */
+  color: white;
+}
