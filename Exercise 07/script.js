@@ -22,3 +22,4 @@ let sentence = 'My ${noun} leaps ${adjective} when I ${verb} a rainbow in the sk
 console.log(sentence);
 
 // console.log(Math.floor(Math.random()*arrayName.length))
+
