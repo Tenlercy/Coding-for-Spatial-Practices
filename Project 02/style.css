@@ -10,10 +10,6 @@ li {
     padding: 0 40px;
 }
 
-li:hover{
-    /* animation; */
-}
-
 @keyframes changeMe {
    0%{
     background-color: tomato;
