@@ -1,0 +1,30 @@
+nav{
+    height: 30px;
+}
+
+.container a{
+    text-decoration: none;
+    color: white;
+}
+li {
+    padding: 0 40px;
+}
+
+li:hover{
+    /* animation; */
+}
+
+@keyframes changeMe {
+   0%{
+    background-color: tomato;
+   }
+   50%{
+    background-color: rgb(199, 68, 44);
+   }
+   75%{
+    background-color: rgb(124, 44, 30);
+   }
+   100%{
+    background-color: rgb(37, 9, 4);
+   }
+}
